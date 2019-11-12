@@ -1,6 +1,6 @@
 import re
 
-str = "Take up one idea.one idea at a time"
+str = "Take 1 up one 23 idea.one idea 45 at a time"
 
 # FIND
 
@@ -33,4 +33,9 @@ print(result)
 
 result = re.match(r'T\w\w', str)
 print(result.group())
+
+# SPLIT
+# Split the string when there are digits
+result = re.split(r'\d+', str)
+print(result)
 
