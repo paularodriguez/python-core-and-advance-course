@@ -39,3 +39,10 @@ print(result.group())
 result = re.split(r'\d+', str)
 print(result)
 
+# Substitute
+# It works like a replaceAll
+result = re.sub(r'one', 'two', str)
+print(result)
+
+
+
