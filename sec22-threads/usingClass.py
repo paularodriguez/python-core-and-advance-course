@@ -19,3 +19,10 @@ t = Thread(target=obj.displayNumbers)
 
 # Start the thread
 t.start()
+
+
+t2 = Thread(target=obj.displayNumbers)
+t2.start()
+
+t3 = Thread(target=obj.displayNumbers)
+t3.start()
