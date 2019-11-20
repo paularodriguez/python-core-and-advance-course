@@ -14,10 +14,18 @@ cursor = conn.cursor()
 cursor.execute("Select * from emp")
 
 # Get first and iterate through the others
-row = cursor.fetchone()
-while row is not None:
+# row = cursor.fetchone()
+# while row is not None:
+#     print(row)
+#     row = cursor.fetchone()
+
+# Fetch all items
+rows = cursor.fetchall()
+
+print("Total number of records: ", cursor.rowcount)
+
+for row in rows:
     print(row)
-    row = cursor.fetchone()
 
 cursor.close()
 conn.close()
